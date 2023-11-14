@@ -1,0 +1,263 @@
+body{
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul{
+    list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: rgb(43, 68, 89);
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}   
+
+nav ul {
+    display: flex;
+    padding: 20px 0;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: orange;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.parrafo1{
+text-align: center;
+}
+
+.parrafo2{
+    padding: 3%;
+}
+header a i {
+color: brown;
+font-size: 2em;
+padding: 5px;
+}
+
+.acerca-imagenes {
+    text-align: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clear: both;
+    background-color: rgb(43, 68, 89);
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  .form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+
+#check {
+    display: none;
+    
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: brown;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul li a :hover {
+    background-color: black;
+    color:  white;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header {
+        background-color: rgb(43, 68, 89);
+    }
+    h2 {
+        text-align: center;
+    }
+    .acerca-de-mi{
+        text-align: center;
+    }
+    .acerca-imagenes img { 
+        margin-bottom: 5%;
+        width: 60%;
+        height: 20%;
+    }  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    nav ul {
+        background-color: black;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 20px 0;
+        height: 100vh;
+        /*display:none;*/
+        overflow-y: auto;
+        cursor: pointer;
+        left: 100%;
+        transition: 1s;
+    }
+
+    nav ul li {
+        margin: 60px 0;
+        color: greenyellow;
+    }
+
+    nav ul li a:hover {
+        background: none;
+        color: chocolate;
+    }
+
+    .checkbtn { 
+        display: block;
+    }
+
+    .active {
+        left: 0%;
+        transition: all 1s;
+    }
+
+    .form-header {
+        padding: 50px;
+      }
+    
+      .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .form-row input[type="text"],
+      .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+          width: 250px;
+        }
+        .form-row button {
+          margin-left: 120px;}
+
+}
