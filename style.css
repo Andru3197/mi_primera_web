@@ -45,6 +45,10 @@ h1 {
     text-align: center;
 }
 
+.greeting{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .parrafo1{
 text-align: center;
 }
