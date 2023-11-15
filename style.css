@@ -58,8 +58,14 @@ font-size: 2em;
 padding: 5px;
 }
 
-.acerca-imagenes {
+.acerca-imagenes img {
+  display: flex;
     text-align: center;
+    align-items: center;
+
+    margin: 3%;
+    width: 94%;
+    height: 30%;
 }
 footer{
     display: flex;
