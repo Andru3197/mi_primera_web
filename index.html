@@ -10,20 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/1be6d1b930.js" crossorigin="anonymous">
-    </script>
     <link rel="shortcut icon" href="Img/pixel.JPG">
-    <script src="script.js"></script>
 </head>
 <body class="img-fondo">
 
-   <div class "container">
+  <div class="container">
     <header class="encabezado">
       <a href="index.html"> <img src="Img/pixel.JPG" class="logo"></a>
         <nav class="navbar">
             <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-        </label>
+            <label for="check" class="checkbtn"></label>
             <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -32,14 +28,14 @@
                 <li><a href="#contactanos">Contactanos</a></li>
             </ul>
         </nav>
-        <a href="#" class="hamb"><i class="fa-solid fa-bars"></i></a>
-      </div>
-    </header>
+        <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+      </header>
+    </div>
 
     <main id="seccion">
 
         <section id="inicio">
-          <img src="">
+          <img src="ruta_de_la_imagen.jpg" alt="Inicio Imagen">
             <div class="acerca-de-mi">
                 <h1> <b> Conoce a</b><br>Pixel Fusion Studio</br></h1>
                 <p class="parrafo1"><b>¡Bienvenido a la Era Digital de Oportunidades!</b> <br>Descubre cómo nuestra pasión por el marketing y la creatividad puede impulsar tu presencia en línea.</br> ¡Explora, Conecta, Triunfa!</p>
@@ -48,13 +44,13 @@
               </div>
             <div class="acerca-imagenes">
                 <img src="Img/market.jpg" alt="imagen market">
-            </section>
-
+            </div>
+          </section>
 
         <section id="nosotros" class="seccion">
           <div class="container">
-          <p>Somos más que un equipo; somos arquitectos digitales apasionados por dar vida a tus ideas. Con expertise en marketing digital y diseño creativo, fusionamos estrategias innovadoras con visión artística. Nuestro compromiso es impulsar tu presencia en línea, creando conexiones memorables en el vasto mundo digital. En cada proyecto, buscamos trascender las expectativas y convertir visiones en realidades digitales impactantes. ¡Conócenos y descubre cómo hacemos que tu historia destaque en la Era Digital!</p>
-          <div class="bloque-img-servicio cuadro-perfecto"> <img src="Img/futuro1.jpg"></div>
+            <p>Somos más que un equipo; somos arquitectos digitales apasionados por dar vida a tus ideas. Con expertise en marketing digital y diseño creativo, fusionamos estrategias innovadoras con visión artística. Nuestro compromiso es impulsar tu presencia en línea, creando conexiones memorables en el vasto mundo digital. En cada proyecto, buscamos trascender las expectativas y convertir visiones en realidades digitales impactantes. ¡Conócenos y descubre cómo hacemos que tu historia destaque en la Era Digital!</p>
+            <div class="bloque-img-servicio cuadro-perfecto"> <img src="Img/futuro1.jpg" alt="Imagen Futuro"></div>
           </div>
         </section>
 
@@ -161,76 +157,78 @@
 
               <div class="columna-45 columna-mobile-50">
                 <div class="cuadrado-perfecto">
-                  <img src="#">
+                  <a href="#" target="_blank"><img src="#" alt="Portafolio Imagen 1"></a>
                   <h4>Imagen 1</h4>
                 </div>
               </div>
               
               <div class="columna-45 columna-mobile-50">
                 <div class="cuadrado-perfecto">
-                  <img src="#">
+                  <a href="#" target="_blank"><img src="#" alt="Portafolio Imagen 1"></a>
                   <h4>Imagen 2</h4>
                 </div>
               </div>
 
               <div class="columna-45 columna-mobile-50">
                 <div class="cuadrado-perfecto">
-                  <img src="#">
+                  <a href="#" target="_blank"><img src="#" alt="Portafolio Imagen 1"></a>
                   <h4>Imagen 3</h4>
                 </div>
               </div>
 
               <div class="columna-45 columna-mobile-50">
                 <div class="cuadrado-perfecto">
-                  <img src="#">
+                  <a href="#" target="_blank"><img src="#" alt="Portafolio Imagen 1"></a>
                   <h4>Imagen 4</h4>
                 </div>
               </div>
 
             </div>
           </div>
+        </section>
 
-        </section id="contactanos">
+        <section id="contactanos">
             <footer class="form-header">
                 <h1>Contacto</h1>
-      <p><em>¡Esperamos tu consulta!</em></p>
+                <p><em>¡Esperamos tu consulta!</em></p>
 
-      <form action="" method="get" class="formulario" id="form">
-        <div class="form-row">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="pepe@gmail.com"
-              required
-            />
-          </div>
-          <div class="form-row">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
-          </div>
-          <div class="form-row">
-            <button>Enviar</button>
-          </div>
-          <p class="alertas" id="alertas"></p>
-        </form>
+                <form action="" method="get" class="formulario" id="form" role="form">
+                <div class="form-row">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" />
+                </div>
+                <div class="form-row">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="pepe@gmail.com"
+                  required
+                />
+                </div>
+                <div class="form-row">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div class="form-row">
+                <button>Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+                </form>
 
-        <div class="contact-container">
-          <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1943507608808!2d-74.0876227902477!3d4.736271195218997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84e4d02068b1%3A0x9be255429c7b9d36!2sCasa%20Comercial%20El%20Portal%20de%20Suba!5e0!3m2!1ses-419!2sco!4v1700018863076!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+                <div class="contact-container">
+                <div id="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1943507608808!2d-74.0876227902477!3d4.736271195218997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84e4d02068b1%3A0x9be255429c7b9d36!2sCasa%20Comercial%20El%20Portal%20de%20Suba!5e0!3m2!1ses-419!2sco!4v1700018863076!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-          <div id="contact-info">
-            <p><strong>Dirección:</strong> Calle X, Ciudad Y</p>
-            <p><strong>Teléfono:</strong> +123456789</p>
-            <p><strong>Email:</strong> info@mail.com</p>
-          </div>
-        </div>
+                <div id="contact-info">
+                <p><strong>Dirección:</strong> Calle X, Ciudad Y</p>
+                <p><strong>Teléfono:</strong> +123456789</p>
+                <p><strong>Email:</strong> info@mail.com</p>
+                </div>
+                </div>
+
                 <h3>Redes sociales</h3>
                 <ul>
                     <li><a href="#facebook">Facebook</a></li>
@@ -239,9 +237,7 @@
                     <li><a href="#whatsapp">WhatsApp</a></li>
                 </ul>
             </footer>
-            </div>
         </section>
     </main>
-   </div> 
 </body>
 </html>

@@ -52,21 +52,63 @@ text-align: center;
 .parrafo2{
     padding: 3%;
 }
+
 header a i {
 color: brown;
 font-size: 2em;
 padding: 5px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  box-sizing: border-box;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.columna img {
+  max-width: 280px;
+  height: 200px;
+}
+
+.bloque-servicio {
+  text-align: center;
+}
+
+.bloque-img-servicio {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bloque-contenido-servicio {
+  background-color: #f6f7f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
 .acerca-imagenes img {
   display: flex;
-    text-align: center;
-    align-items: center;
-
-    margin: 3%;
-    width: 94%;
-    height: 30%;
+  text-align: center;
+  align-items: center;
+  margin: 3%;
+  width: 94%;
+  height: 30%;
+  max-width: 100%;
+  height: auto;
 }
+
 footer{
     display: flex;
     flex-direction: column;
@@ -83,15 +125,14 @@ footer a {
 }
 
 .form-header {
-    text-align: center;
-    background-color: #f6f7f8;
-    border: 1px solid #d6d9dc;
-    border-radius: 3px;
-  
-    width: 80%;
-    margin: 10px auto;
-    padding: 50px;
-  }
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
   
   .form-header h1 {
     font-size: 30px;
@@ -102,11 +143,10 @@ footer a {
     background-color: #f6f7f8;
     border: 1px solid #d6d9dc;
     border-radius: 3px;
-  
     width: 80%;
     padding: 50px;
     margin: 30px 0 40px 0;
-  }
+}
 
   .form-row {
     margin-bottom: 40px;
@@ -134,32 +174,26 @@ footer a {
   .form-row textarea {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 14px;
-  
     background-color: #bdbdbd;
     border: 0;
     border-radius: 6px;
-  
     min-height: 200px;
     margin-bottom: 10px;
     padding: 7px;
     resize: none;
-  
     width: 100%;
-  }
+}
 
-  .form-row button {
-    font-size: 16px;
-    font-weight: bold;
-  
-    color: #ffffff;
-    background-color: #5995da;
-  
-    border: none;
-    border-radius: 3px;
-  
-    padding: 10px 40px;
-    cursor: pointer;
-  }
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5995da;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
   
   .form-row button:hover {
     background-color: #76aeed;
@@ -218,6 +252,9 @@ nav ul li a :hover {
     h2 {
         text-align: center;
     }
+    .columna {
+      flex: 100%;
+  }
     .acerca-de-mi{
         text-align: center;
     }
